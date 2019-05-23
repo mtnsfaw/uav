@@ -1,4 +1,4 @@
-1.技术实现：java、SpringBoot、MyBatis、MySQL
+1.技术实现：java、SpringBoot、MyBatis、MySQL、正则表达式
 
 2、数据库
 库名：uav
