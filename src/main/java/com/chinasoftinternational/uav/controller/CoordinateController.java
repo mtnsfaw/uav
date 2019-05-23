@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @ClassName CoordinateController.java
- * @Description Too
+ * @Description 控制器
  * @Author Jesse Lin
  * @Since 2019/5/11 17:49
  */
