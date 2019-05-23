@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chinasoftinternational.uav.mapper.PlaneInfoMapper">
+
+    <select id="findPlaneInfoByPlaneName" resultType="com.chinasoftinternational.uav.bean.PlaneInfo">
+        SELECT * FROM plane_info WHERE plane_name=#{planeName}
+    </select>
+
+    <insert id="insertPlaneInfo">
+        INSERT INTO plane_info(plane_name,cur_index,status,cur_coordinate,pre_coordinate) VALUES(#{planeName},#{curIndex},#{status},#{curCoordinate},#{preCoordinate})
+    </insert>
+
+    <update id="updatePlaneInfo">
+        UPDATE plane_info SET cur_index=#{curIndex},status=#{status},cur_coordinate=#{curCoordinate},pre_coordinate=#{preCoordinate} WHERE plane_name=#{planeName}
+    </update>
+</mapper>
