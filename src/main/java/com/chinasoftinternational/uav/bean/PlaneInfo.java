@@ -1,11 +1,16 @@
 package com.chinasoftinternational.uav.bean;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 /**
  * @ClassName PlaneInfo.java
  * @Description 飞机情况实体类
  * @Author Jesse Lin
  * @Since 2019/5/11 15:15
  */
+@NoArgsConstructor
+@Data
 public class PlaneInfo {
 
     private Integer id;
@@ -15,9 +20,6 @@ public class PlaneInfo {
     private String curCoordinate;//当前坐标
     private String preCoordinate;//上一个坐标
 
-    public PlaneInfo() {
-    }
-
     public PlaneInfo(String planeName, Integer curIndex, Integer status, String curCoordinate, String preCoordinate) {
         this.planeName = planeName;
         this.curIndex = curIndex;
@@ -26,51 +28,4 @@ public class PlaneInfo {
         this.preCoordinate = preCoordinate;
     }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getPlaneName() {
-        return planeName;
-    }
-
-    public void setPlaneName(String planeName) {
-        this.planeName = planeName;
-    }
-
-    public Integer getCurIndex() {
-        return curIndex;
-    }
-
-    public void setCurIndex(Integer curIndex) {
-        this.curIndex = curIndex;
-    }
-
-    public Integer getStatus() {
-        return status;
-    }
-
-    public void setStatus(Integer status) {
-        this.status = status;
-    }
-
-    public String getCurCoordinate() {
-        return curCoordinate;
-    }
-
-    public void setCurCoordinate(String curCoordinate) {
-        this.curCoordinate = curCoordinate;
-    }
-
-    public String getPreCoordinate() {
-        return preCoordinate;
-    }
-
-    public void setPreCoordinate(String preCoordinate) {
-        this.preCoordinate = preCoordinate;
-    }
 }
