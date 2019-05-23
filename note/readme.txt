@@ -1,6 +1,6 @@
---1.技术实现：java、SpringBoot、MyBatis、MySQL、正则表达式
+1.技术实现：java、SpringBoot、MyBatis、MySQL、正则表达式
 
---2、数据库
+2、数据库
 库名：uav
 账号：root 密码：123456
 程序配置文件：application.yml
@@ -12,11 +12,11 @@ type: com.alibaba.druid.pool.DruidDataSource
 
 另外附上表sql脚本
 
---3.运行
+3.运行
 方案1——IDEA导入工程启动com.chinasoftinternational.uav.UavApplication.java（springboot启动器）
 方案2——java -jar uav-0.0.1-SNAPSHOT.jar 直接命令运行jar包启动
 
---4.测试用例以及页面返回值（说明：页面发请求）
+4.测试用例以及页面返回值（说明：页面发请求）
 
 http://localhost:8080/getCoordinateInfo?signalIndex=0&textContext=plane1 1 1 1
 返回：plane1 0 1 1 1
