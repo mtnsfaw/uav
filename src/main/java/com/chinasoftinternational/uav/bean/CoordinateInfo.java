@@ -3,6 +3,7 @@ package com.chinasoftinternational.uav.bean;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 /**
  * @ClassName CoordinateInfo.java
@@ -12,6 +13,7 @@ import lombok.NoArgsConstructor;
  */
 @NoArgsConstructor
 @Data
+@Accessors(chain = true)
 public class CoordinateInfo {
     private Integer id;
     private String planeName;
