@@ -17,7 +17,6 @@ import org.springframework.util.StringUtils;
  * @Since 2019/5/11 16:04
  */
 @Service
-@Transactional
 public class DoCoordinateService implements IDoCoordinateService {
 
     @Autowired
@@ -25,6 +24,7 @@ public class DoCoordinateService implements IDoCoordinateService {
     @Autowired
     private IPlaneInfoService iPlaneInfoService;
 
+    @Transactional
     @Override
     public String getCoordinateInfo(Integer signalIndex, String textContext) throws RuntimeException {
         String result = validateParam(signalIndex, textContext);
