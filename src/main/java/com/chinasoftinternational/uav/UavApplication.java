@@ -19,7 +19,7 @@ import javax.sql.DataSource;
 @SpringBootApplication
 public class UavApplication implements TransactionManagementConfigurer {
 
-    @Resource(name="txManager")
+    @Resource
     private PlatformTransactionManager txManager;
 
     // 实现接口 TransactionManagementConfigurer 方法，其返回值代表在拥有多个事务管理器的情况下默认使用的事务管理器
