@@ -3,11 +3,8 @@ package com.chinasoftinternational.uav.dao.impl;
 import com.chinasoftinternational.uav.bean.PlaneInfo;
 import com.chinasoftinternational.uav.dao.IPlaneInfoDao;
 import com.chinasoftinternational.uav.mapper.PlaneInfoMapper;
-import com.chinasoftinternational.uav.service.IPlaneInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @ClassName PlaneInfoService.java

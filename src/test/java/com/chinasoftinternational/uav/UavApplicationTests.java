@@ -15,9 +15,6 @@ public class UavApplicationTests {
     }
 
     public static void main(String[] args) {
-        String str = "^[A-Za-z0-9]+$";
-        String test = "啊12plane1";
-        System.out.println(test.matches(str));
     }
 
 }
