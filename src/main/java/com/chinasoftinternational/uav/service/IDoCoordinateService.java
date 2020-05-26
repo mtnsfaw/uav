@@ -10,7 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
  */
 public interface IDoCoordinateService {
 
-    @Transactional
     public String getCoordinateInfo(Integer signalIndex, String textContext) throws RuntimeException;
 
 }
