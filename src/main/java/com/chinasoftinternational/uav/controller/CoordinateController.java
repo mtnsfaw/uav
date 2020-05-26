@@ -20,7 +20,7 @@ public class CoordinateController {
     /**
      *
      * @param signalIndex 序号
-     * @param textContext 文本内容
+     * @param textContext 文本内容 
      * @return
      */
     @RequestMapping("/getCoordinateInfo")
