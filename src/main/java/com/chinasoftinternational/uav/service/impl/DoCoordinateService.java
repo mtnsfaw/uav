@@ -56,7 +56,8 @@ public class DoCoordinateService implements IDoCoordinateService {
         PlaneInfo planeInfo = iPlaneInfoService.findPlaneInfoByPlaneName(planeName);
 
         if(planeInfo == null) {
-            if(signalIndex == 0 && contextArry.length == 4) {//起始
+            //起始
+            if(signalIndex == 0 && contextArry.length == 4) {
                 iPlaneInfoService.insertOrUpdatePlaneInfo(new PlaneInfo(planeName, signalIndex, 0, coordinateStr, ""));
                 iCoordinateInfoService.insertCoordinateInfo(new CoordinateInfo(planeName, signalIndex, textContext));
                 result = planeName + " "+ signalIndex + " " + destinationLocation;
