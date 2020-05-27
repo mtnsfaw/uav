@@ -2,7 +2,7 @@ package com.chinasoftinternational.uav.service.impl;
 
 import com.chinasoftinternational.uav.bean.PlaneInfo;
 import com.chinasoftinternational.uav.dao.IPlaneInfoDao;
-import com.chinasoftinternational.uav.service.IPlaneInfoService;
+import com.chinasoftinternational.uav.service.PlaneInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Service
 @Transactional
-public class PlaneInfoService implements IPlaneInfoService {
+public class PlaneInfoServiceImpl implements PlaneInfoService {
 
     @Autowired
     private IPlaneInfoDao iPlaneInfoDao;

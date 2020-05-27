@@ -1,6 +1,6 @@
 package com.chinasoftinternational.uav.controller;
 
-import com.chinasoftinternational.uav.service.IDoCoordinateService;
+import com.chinasoftinternational.uav.service.DoCoordinateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CoordinateController {
 
     @Autowired
-    IDoCoordinateService iDoCordinateService;
+    DoCoordinateService iDoCordinateService;
     /**
      *
      * @param signalIndex 序号

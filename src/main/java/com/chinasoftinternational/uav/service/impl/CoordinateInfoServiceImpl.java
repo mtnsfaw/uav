@@ -2,7 +2,7 @@ package com.chinasoftinternational.uav.service.impl;
 
 import com.chinasoftinternational.uav.bean.CoordinateInfo;
 import com.chinasoftinternational.uav.dao.ICoordinateInfoDao;
-import com.chinasoftinternational.uav.service.ICoordinateInfoService;
+import com.chinasoftinternational.uav.service.CoordinateInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Service
 @Transactional
-public class CoordinateInfoService implements ICoordinateInfoService {
+public class CoordinateInfoServiceImpl implements CoordinateInfoService {
 
     @Autowired
     private ICoordinateInfoDao iCoordinateInfoDao;

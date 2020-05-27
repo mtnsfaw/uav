@@ -8,7 +8,7 @@ import com.chinasoftinternational.uav.bean.CoordinateInfo;
  * @Author Jesse Lin
  * @Since 2019/5/11 16:08
  */
-public interface ICoordinateInfoService {
+public interface CoordinateInfoService {
 
     /**
      * 插入坐标

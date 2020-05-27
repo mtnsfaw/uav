@@ -2,9 +2,9 @@ package com.chinasoftinternational.uav.service.impl;
 
 import com.chinasoftinternational.uav.bean.CoordinateInfo;
 import com.chinasoftinternational.uav.bean.PlaneInfo;
-import com.chinasoftinternational.uav.service.ICoordinateInfoService;
-import com.chinasoftinternational.uav.service.IDoCoordinateService;
-import com.chinasoftinternational.uav.service.IPlaneInfoService;
+import com.chinasoftinternational.uav.service.CoordinateInfoService;
+import com.chinasoftinternational.uav.service.DoCoordinateService;
+import com.chinasoftinternational.uav.service.PlaneInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,12 +17,12 @@ import org.springframework.util.StringUtils;
  * @Since 2019/5/11 16:04
  */
 @Service
-public class DoCoordinateService implements IDoCoordinateService {
+public class DoCoordinateServiceImpl implements DoCoordinateService {
 
     @Autowired
-    private ICoordinateInfoService iCoordinateInfoService;
+    private CoordinateInfoService iCoordinateInfoService;
     @Autowired
-    private IPlaneInfoService iPlaneInfoService;
+    private PlaneInfoService iPlaneInfoService;
 
     @Transactional
     @Override

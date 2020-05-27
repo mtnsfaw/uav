@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
  * @Author Jesse Lin
  * @Since 2019/5/11 16:02
  */
-public interface IDoCoordinateService {
+public interface DoCoordinateService {
 
     public String getCoordinateInfo(Integer signalIndex, String textContext) throws RuntimeException;
 
