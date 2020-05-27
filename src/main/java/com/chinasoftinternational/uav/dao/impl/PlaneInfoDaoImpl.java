@@ -1,7 +1,7 @@
 package com.chinasoftinternational.uav.dao.impl;
 
 import com.chinasoftinternational.uav.bean.PlaneInfo;
-import com.chinasoftinternational.uav.dao.IPlaneInfoDao;
+import com.chinasoftinternational.uav.dao.PlaneInfoDao;
 import com.chinasoftinternational.uav.mapper.PlaneInfoMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
  * @Since 2019/5/11 15:38
  */
 @Repository
-public class PlaneInfoDao implements IPlaneInfoDao {
+public class PlaneInfoDaoImpl implements PlaneInfoDao {
 
     @Autowired
     private PlaneInfoMapper planeInfoMapper;

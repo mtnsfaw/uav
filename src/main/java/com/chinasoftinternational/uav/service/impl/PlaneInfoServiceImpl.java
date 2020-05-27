@@ -1,7 +1,7 @@
 package com.chinasoftinternational.uav.service.impl;
 
 import com.chinasoftinternational.uav.bean.PlaneInfo;
-import com.chinasoftinternational.uav.dao.IPlaneInfoDao;
+import com.chinasoftinternational.uav.dao.PlaneInfoDao;
 import com.chinasoftinternational.uav.service.PlaneInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,7 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class PlaneInfoServiceImpl implements PlaneInfoService {
 
     @Autowired
-    private IPlaneInfoDao iPlaneInfoDao;
+    private PlaneInfoDao iPlaneInfoDao;
 
     @Override
     public PlaneInfo findPlaneInfoByPlaneName(String planeName) throws RuntimeException {

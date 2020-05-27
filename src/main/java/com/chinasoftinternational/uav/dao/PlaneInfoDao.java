@@ -8,7 +8,7 @@ import com.chinasoftinternational.uav.bean.PlaneInfo;
  * @Author Jesse Lin
  * @Since 2019/5/11 20:10
  */
-public interface IPlaneInfoDao {
+public interface PlaneInfoDao {
 
     /**
      * 根据飞机名称获取飞机信息
