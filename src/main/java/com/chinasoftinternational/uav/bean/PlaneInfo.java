@@ -16,11 +16,26 @@ import lombok.experimental.Accessors;
 public class PlaneInfo {
 
     private Integer id;
-    private String planeName;//飞机名称
-    private Integer curIndex;//当前所处序号
-    private Integer status;//状态:0-正常，1-故障
-    private String curCoordinate;//当前坐标
-    private String preCoordinate;//上一个坐标
+    /**
+     * 飞机名称
+     */
+    private String planeName;
+    /**
+     * 当前所处序号
+     */
+    private Integer curIndex;
+    /**
+     * 状态:0-正常，1-故障
+     */
+    private Integer status;
+    /**
+     * 当前坐标
+     */
+    private String curCoordinate;
+    /**
+     * 上一个坐标
+     */
+    private String preCoordinate;
 
     public PlaneInfo(String planeName, Integer curIndex, Integer status, String curCoordinate, String preCoordinate) {
         this.planeName = planeName;
